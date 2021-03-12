@@ -1,7 +1,8 @@
 FROM ubuntu:20.04
 
 RUN apt update && apt install -y openssh-server
-RUN apt -y install vim emacs
+<<<<<<< HEAD
+RUN apt -y install vim git emacs
 
 RUN mkdir /var/run/sshd
 RUN echo 'root:mypassword' | chpasswd
